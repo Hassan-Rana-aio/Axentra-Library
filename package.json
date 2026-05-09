@@ -1,8 +1,11 @@
 {
-  "name": "axentra-library",
+  "name": "@hassanrana/axentra-library",
   "version": "0.0.1",
   "description": "Axentra UI component library",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
