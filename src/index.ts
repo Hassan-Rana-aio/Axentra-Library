@@ -3,6 +3,7 @@ export {
   Card,
   Dropdown,
   TextField,
+  Spinner,
   HoverTooltip,
   Sidebar,
   CalendarIcon,
@@ -20,6 +21,7 @@ export {
   type DropdownProps,
   type TextFieldProps,
   type TextFieldSize,
+  type SpinnerProps,
   type SidebarLogoutConfig,
   type SidebarNavItem,
   type SidebarProps,
@@ -31,4 +33,4 @@ export {
   type MailIconProps,
 } from "./components";
 
-export const AXENTRA_KIT_VERSION = "0.0.1";
+export const AXENTRA_KIT_VERSION = "0.0.3";

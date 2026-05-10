@@ -10,5 +10,6 @@ export const storyTitle = {
   dropdown: "Axentra/Dropdown",
   autoComplete: "Axentra/AutoComplete",
   textField: "Axentra/TextField",
+  spinner: "Axentra/Spinner",
   sidebar: "Axentra/Sidebar",
 } as const;

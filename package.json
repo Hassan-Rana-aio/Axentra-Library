@@ -1,6 +1,6 @@
 {
   "name": "@hassanrana/axentra-library",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Axentra UI component library",
   "type": "module",
   "publishConfig": {
