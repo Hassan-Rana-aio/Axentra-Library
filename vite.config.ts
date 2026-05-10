@@ -19,7 +19,12 @@ export default defineConfig({
       formats: ["es", "cjs"],
     },
     rollupOptions: {
-      external: ["react", "react-dom", "react/jsx-runtime"],
+      external: (id) =>
+        id === "react" ||
+        id === "react-dom" ||
+        id.startsWith("react/jsx-runtime") ||
+        id === "react-icons" ||
+        id.startsWith("react-icons/"),
     },
   },
 });

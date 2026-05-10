@@ -1,36 +1,28 @@
-import type { SVGAttributes } from "react";
+import type { ComponentProps } from "react";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi2";
 
-export type ChevronIconProps = Omit<
-  SVGAttributes<SVGSVGElement>,
-  "children" | "viewBox"
-> & {
+export type ChevronIconProps = ComponentProps<typeof HiChevronDown> & {
   /** `down` = closed trigger style; `up` = open / expanded */
   direction?: "up" | "down";
 };
 
-export function ChevronIcon({ direction = "down", style, ...rest }: ChevronIconProps) {
+/** Directional chevron — Heroicons (`react-icons/hi2`). */
+export function ChevronIcon({
+  direction = "down",
+  size = 16,
+  style,
+  ...rest
+}: ChevronIconProps) {
+  const Icon = direction === "up" ? HiChevronUp : HiChevronDown;
   return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
-      fill="none"
+    <Icon
       aria-hidden
+      size={size}
       style={{
         flexShrink: 0,
-        transform: direction === "up" ? "rotate(180deg)" : "rotate(0deg)",
-        transition: "transform 0.15s ease",
         ...style,
       }}
       {...rest}
-    >
-      <path
-        d="M4 6l4 4 4-4"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    />
   );
 }

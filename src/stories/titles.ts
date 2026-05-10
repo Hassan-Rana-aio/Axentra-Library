@@ -8,5 +8,7 @@ export const storyTitle = {
   button: "Axentra/Button",
   card: "Axentra/Card",
   dropdown: "Axentra/Dropdown",
+  autoComplete: "Axentra/AutoComplete",
+  textField: "Axentra/TextField",
   sidebar: "Axentra/Sidebar",
 } as const;

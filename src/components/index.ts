@@ -13,6 +13,12 @@ export type {
 export { Dropdown } from "./Dropdown";
 export type { DropdownProps } from "./Dropdown";
 
+export { AutoComplete } from "./AutoComplete";
+export type { AutoCompleteProps } from "./AutoComplete";
+
+export { TextField } from "./TextField";
+export type { TextFieldProps, TextFieldSize } from "./TextField";
+
 export { Card } from "./Card";
 export type { CardColumnLayout, CardPadding, CardProps, CardVariant } from "./Card";
 
@@ -22,5 +28,10 @@ export type { SidebarLogoutConfig, SidebarNavItem, SidebarProps } from "./Sideba
 export { HoverTooltip } from "./HoverTooltip";
 export type { HoverTooltipPlacement, HoverTooltipProps } from "./HoverTooltip";
 
-export { ChevronIcon } from "./icons";
-export type { ChevronIconProps } from "./icons";
+export { CalendarIcon, ChevronIcon, LockIcon, MailIcon } from "./icons";
+export type {
+  CalendarIconProps,
+  ChevronIconProps,
+  LockIconProps,
+  MailIconProps,
+} from "./icons";
