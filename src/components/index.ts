@@ -19,6 +19,9 @@ export type { AutoCompleteProps } from "./AutoComplete";
 export { TextField } from "./TextField";
 export type { TextFieldProps, TextFieldSize } from "./TextField";
 
+export { TextArea } from "./TextArea";
+export type { TextAreaProps, TextAreaSize } from "./TextArea";
+
 export { Card } from "./Card";
 export type { CardColumnLayout, CardPadding, CardProps, CardVariant } from "./Card";
 
